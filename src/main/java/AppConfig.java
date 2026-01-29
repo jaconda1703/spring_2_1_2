@@ -4,8 +4,10 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {
+
+    public static final String HELLO_WORLD_BEAN = "helloWorld";
  
-    @Bean(name="helloworld")
+    @Bean(name=HELLO_WORLD_BEAN)
     public HelloWorld getHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.setMessage("Hello World!");
